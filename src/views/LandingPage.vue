@@ -5,7 +5,7 @@
         <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       </template>
 
-      <v-app-bar-title>Photos</v-app-bar-title>
+      <v-app-bar-title>Coop Buckets</v-app-bar-title>
 
       <template v-slot:append>
         <v-btn icon="mdi-dots-vertical"></v-btn>
@@ -24,8 +24,8 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-main class="d-flex align-center justify-center" style="min-height: 300px;">
-      Main Content
+    <v-main>
+      <router-view></router-view>
     </v-main>
 
   </v-layout>
