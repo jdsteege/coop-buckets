@@ -4,7 +4,7 @@ import { createRouter, createWebHistory } from "vue-router";
 const routes = [
   {
     path: "/",
-    component: () => import("@/pages/LandingPage.vue"),
+    component: () => import("@/views/LandingPage.vue"),
     children: [
       { path: "/", redirect: "/main-bucket-list" },
       {
