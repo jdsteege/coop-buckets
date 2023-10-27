@@ -14,14 +14,24 @@
 
 
     <v-navigation-drawer v-model="drawer" temporary>
-      <v-list-item prepend-avatar="https://randomuser.me/api/portraits/men/78.jpg" title="John Leider"></v-list-item>
+      <v-list-item title="User Name"></v-list-item>
 
       <v-divider></v-divider>
 
       <v-list density="compact" nav>
-        <v-list-item prepend-icon="mdi-view-dashboard" title="Home" value="home"></v-list-item>
-        <v-list-item prepend-icon="mdi-forum" title="About" value="about"></v-list-item>
+        <v-list-item title="Buckets" to="/main-bucket-list"></v-list-item>
+        <v-list-item title="Transactions" to="/main-transaction-list"></v-list-item>
+        <v-list-item title="Accounts" to="/main-account-list"></v-list-item>
+        <v-list-item title="Reports" to="/main-report-list"></v-list-item>
       </v-list>
+
+      <v-divider></v-divider>
+
+      <v-list density="compact" nav>
+        <v-list-item title="Edit Buckets"></v-list-item>
+        <v-list-item title="Settings"></v-list-item>
+      </v-list>
+
     </v-navigation-drawer>
 
     <v-main>
